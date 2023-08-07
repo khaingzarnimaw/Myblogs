@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css"
-import { Outlet ,NavLink} from "react-router-dom";//Link အစား NavLink သုံးသွားပုံ
+import { Outlet,NavLink} from "react-router-dom";//Link အစား NavLink သုံးသွားပုံ
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
           </li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
+          
         </ul>
       </nav>
       {/* {dynamically} */}

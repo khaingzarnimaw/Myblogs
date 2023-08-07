@@ -2,6 +2,7 @@ import App from '../App';
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import BlogDetail from '../pages/BlogDetail';
 
 import {
     createBrowserRouter,
@@ -26,6 +27,10 @@ import {
             path:'/contact',
             element:<Contact/>
         },
+        {
+            path:'/blogs/:id',//main -> home.jsx
+            element : <BlogDetail/>
+        }
       ]
     },
   ]);
