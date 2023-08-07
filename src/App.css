@@ -18,3 +18,7 @@ a {
   text-decoration: none;
   color: #555555;
 }
+
+a.active {
+  color : blue;
+}
