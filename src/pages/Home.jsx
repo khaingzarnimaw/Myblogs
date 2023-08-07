@@ -1,10 +1,22 @@
 import React from 'react'
+import useFetch from '../hooks/useFetch';
+import './Home.css'
 
-const Home = () => {
+function Home () {
+    //blogs
+    let url='http://localhost:3001/blogs'
+    let {data :blogs ,loading , error} = useFetch(url)
   return (
-    <div>
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem animi, voluptates nihil vitae omnis officia odio sit? Iusto nemo blanditiis provident sapiente, soluta id iste, asperiores, sequi ducimus minima perspiciatis!</p>
+    <div className='Home'>
+      {error && <div>{error}</div>}
+      {loading && <div>loading....</div>}
+      { blogs && blogs.map(blog => (
+        <div key={blog.id} className='card'>
+            <h3>{blog.title}</h3>
+            <p> posted by - {blog.author}</p>
+            <a href="">Read more</a>
+        </div>
+      ))}
     </div>
   )
 }

@@ -1,0 +1,23 @@
+{
+    "blogs":[
+        {
+            "id":1,
+            "title": "What is React js?",
+            "author": "Khaing Zar Ni Maw",
+            "body" :"There are many variation of passages of lorem Ipsum available,but the majority have suffered alteration in some form,by injected humour etc."
+        },
+        {
+            "id":2,
+            "title": "What is React js?",
+            "author": "Khaing",
+            "body" :"There are many variation of passages of lorem Ipsum available,but the majority have suffered alteration in some form,by injected humour etc."
+        },
+        {
+            "id":3,
+            "title": "What is React js?",
+            "author": " Ni Maw",
+            "body" :"There are many variation of passages of lorem Ipsum available,but the majority have suffered alteration in some form,by injected humour etc."
+        }
+
+    ]
+}
