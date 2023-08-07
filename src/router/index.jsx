@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import BlogDetail from '../pages/BlogDetail';
+import Notfound from '../pages/Notfound';
 
 import {
     createBrowserRouter,
@@ -30,6 +31,10 @@ import {
         {
             path:'/blogs/:id',//main -> home.jsx
             element : <BlogDetail/>
+        },
+        {
+            path : "*",
+            element: <Notfound/>
         }
       ]
     },
